@@ -8,7 +8,6 @@ import "./src/env.js";
 const config = {
   reactStrictMode: true,
   output: "export",
-  distDir: "docs",
   images: { unoptimized: true },
   trailingSlash: true,
 };
