@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const Navigation = () => {
   const handleClick = (section: string) => {
     document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
@@ -5,7 +7,17 @@ export const Navigation = () => {
 
   return (
     <nav className="sticky top-0 z-99 flex items-center justify-between bg-white p-4 text-[#122241]">
-      <div>LOGO</div>
+      <div className="flex h-[28px] items-center">
+        <Image
+          src="/logo.png"
+          alt="Attenco Solutions Logo"
+          width={130}
+          height={19}
+          className="cursor-pointer"
+          priority
+          onClick={() => handleClick("home")}
+        />
+      </div>
       <ul className="flex space-x-6">
         <li>
           <a
@@ -21,11 +33,11 @@ export const Navigation = () => {
         </li>
         <li>
           <a
-            href="#about"
+            href="#insights"
             className="hover:underline"
             onClick={(e) => {
               e.preventDefault();
-              handleClick("about");
+              handleClick("insights");
             }}
           >
             Insights
