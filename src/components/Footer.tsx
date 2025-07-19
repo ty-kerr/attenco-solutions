@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-row items-center justify-between bg-[#122241] px-[120px] py-14">
+    <footer
+      id="contact"
+      className="flex flex-row items-center justify-between bg-[#122241] px-[120px] py-14"
+    >
       <div className="flex flex-col">
         <Image
           src="/logo.png"
