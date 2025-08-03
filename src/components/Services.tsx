@@ -19,7 +19,7 @@ export const Services = () => {
             </p>
           </div>
           <img
-            src={"/services_1.png"}
+            src={"/services_1.webp"}
             alt={"Services Image"}
             className="w-1/2 object-cover"
           />
@@ -27,7 +27,7 @@ export const Services = () => {
 
         <div className="flex w-full items-center space-x-5">
           <img
-            src={"/services_2.png"}
+            src={"/services_2.webp"}
             alt={"Services Image"}
             className="w-1/2 object-cover"
           />

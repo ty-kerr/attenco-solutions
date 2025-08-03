@@ -9,7 +9,7 @@ export const Navigation = () => {
     <nav className="sticky top-0 z-99 flex items-center justify-between bg-white p-4 text-[#122241]">
       <div className="flex h-[28px] items-center">
         <Image
-          src="/logo.png"
+          src="/logo.webp"
           alt="Attenco Solutions Logo"
           width={130}
           height={19}

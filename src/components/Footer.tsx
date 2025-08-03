@@ -8,7 +8,7 @@ export const Footer = () => {
     >
       <div className="flex flex-col">
         <Image
-          src="/logo.png"
+          src="/logo.webp"
           alt="Attenco Solutions Logo"
           width={130}
           height={19}

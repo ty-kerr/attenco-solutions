@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <div className="w-full" id="home">
       <Image
-        src={"/hero_1.png"}
+        src={"/hero_1.webp"}
         alt={"Hero Image 1"}
         priority
         width={1920}
