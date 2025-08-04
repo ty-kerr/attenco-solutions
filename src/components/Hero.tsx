@@ -16,9 +16,21 @@ export const Hero = () => {
         />
         <div className="absolute top-1/2 left-1/2 z-10 flex w-full max-w-4xl -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center text-center text-white">
           <h1 className="text-[64px] leading-[76px] font-semibold">
-            ATTENTION TO YOU
+            Unlock Top Talents. <br /> Accelerate Your Growth.
           </h1>
-          <p className="text-[36px]">Because your success is our focus</p>
+          <div className="flex flex-row items-center justify-center space-x-1 pt-2">
+            <p className="text-[28px]">Start your hiring journey with </p>
+            <div>
+              <Image
+                src="/logo.webp"
+                alt="Attenco Solutions Logo"
+                width={260}
+                height={38}
+                className="cursor-pointer"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

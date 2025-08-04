@@ -4,7 +4,7 @@ export const ProcessOverview = () => {
   return (
     <>
       <div className="flex w-full flex-col items-center justify-center space-y-2 bg-white px-12 text-center">
-        <h2 className="text-[42px] leading-[48px] font-semibold">
+        <h2 className="text-[32px] leading-[40px] font-semibold">
           Process Overview
         </h2>
         <p className="text-xl">

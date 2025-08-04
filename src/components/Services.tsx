@@ -87,8 +87,8 @@ export const Services = () => {
       </div>
       <div className="flex w-full flex-col items-center justify-center space-y-2 bg-white px-12 py-14 text-center">
         <p className="max-w-[70%] text-[36px] leading-[42px] font-semibold">
-          The best talent is just one conversation away <br /> We&apos;d love to
-          hear from you
+          The best talents are just one conversation away <br /> We&apos;d love
+          to hear from you
         </p>
       </div>
     </>

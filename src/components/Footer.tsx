@@ -10,8 +10,8 @@ export const Footer = () => {
         <Image
           src="/logo.webp"
           alt="Attenco Solutions Logo"
-          width={130}
-          height={19}
+          width={260}
+          height={38}
           className="cursor-pointer"
           priority
         />
@@ -22,18 +22,18 @@ export const Footer = () => {
         </p>
       </div>
       <div className="flex flex-col space-y-4">
-        <h4 className="font-semibold text-white">Contact Us</h4>
+        <h4 className="text-xl font-semibold text-white">Contact Us</h4>
         <div className="flex items-center space-x-2">
           <img src="/call.svg" alt="phone number" height={30} width={30} />
-          <p className="text-white">attencosolutions@gmail.com</p>
+          <p className="text-xl text-white">attencosolutions@gmail.com</p>
         </div>
         <div className="flex items-center space-x-2">
           <img src="/sms.svg" alt="phone number" height={30} width={30} />
-          <p className="text-white">+66645204065</p>
+          <p className="text-xl text-white">+66645204065</p>
         </div>
         <div className="flex items-start space-x-2">
           <img src="/location.svg" alt="phone number" height={30} width={30} />
-          <p className="max-w-[246px] text-white">
+          <p className="max-w-[246px] text-xl text-white">
             3266-1 No.1010, Shinawatra Tower 3, 32nd floor, Viphavadi Rangsit
             Road, Chatuchak, Bangkok, 10900
           </p>
