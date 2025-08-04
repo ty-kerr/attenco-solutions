@@ -3,7 +3,7 @@ import Image from "next/image";
 export const Achievements = () => {
   return (
     <div className="flex h-[360px] w-full items-center justify-between px-30">
-      <h2 className="text-center text-3xl font-bold text-[#122241]">
+      <h2 className="text-center text-3xl font-semibold">
         Delivering Impact Through Experience
       </h2>
       <div className="grid grid-cols-2 grid-rows-2 gap-x-12 gap-y-8">
@@ -51,8 +51,8 @@ const Stat = ({
     <div className="flex flex-row items-center space-x-4">
       <Image src={imageSrc} alt={imageAlt} width={60} height={60} />
       <div className="flex flex-col space-y-2">
-        <p className="text-4xl font-bold text-[#122241]">{stat}</p>
-        <p className="text-lg text-gray-600">{description}</p>
+        <p className="text-4xl font-semibold">{stat}</p>
+        <p className="text-xl text-gray-600">{description}</p>
       </div>
     </div>
   );

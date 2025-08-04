@@ -22,7 +22,7 @@ export const Footer = () => {
         </p>
       </div>
       <div className="flex flex-col space-y-4">
-        <h4 className="font-bold text-white">Contact Us</h4>
+        <h4 className="font-semibold text-white">Contact Us</h4>
         <div className="flex items-center space-x-2">
           <img src="/call.svg" alt="phone number" height={30} width={30} />
           <p className="text-white">attencosolutions@gmail.com</p>

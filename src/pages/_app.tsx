@@ -1,15 +1,15 @@
 import { type AppType } from "next/app";
-import { Geist } from "next/font/google";
+import { Kantumruy_Pro } from "next/font/google";
 
 import "@/styles/globals.css";
 
-const geist = Geist({
+const kantumruy = Kantumruy_Pro({
   subsets: ["latin"],
 });
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <div className={geist.className}>
+    <div className={kantumruy.className}>
       <Component {...pageProps} />
     </div>
   );

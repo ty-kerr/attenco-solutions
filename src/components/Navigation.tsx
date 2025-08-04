@@ -6,7 +6,7 @@ export const Navigation = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-99 flex items-center justify-between bg-white p-4 text-[#122241]">
+    <nav className="sticky top-0 z-99 flex items-center justify-between bg-white p-4">
       <div className="flex h-[28px] items-center">
         <Image
           src="/logo.webp"
@@ -18,7 +18,7 @@ export const Navigation = () => {
           onClick={() => handleClick("home")}
         />
       </div>
-      <ul className="flex space-x-6">
+      <ul className="flex space-x-12 pr-20 text-xl">
         <li>
           <a
             href="#home"
