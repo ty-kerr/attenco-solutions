@@ -27,7 +27,7 @@ export default function Home() {
         <Achievements />
         <Insights />
         <ProcessOverview />
-        <ImageLine2 />
+        {/* <ImageLine2 /> */}
         {/* <Services /> */}
         <Footer />
       </main>
