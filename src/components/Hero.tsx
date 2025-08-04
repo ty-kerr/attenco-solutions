@@ -22,7 +22,7 @@ export const Hero = () => {
             <p className="text-[28px]">Start your hiring journey with </p>
             <div>
               <Image
-                src="/logo.webp"
+                src="/Logo.webp"
                 alt="Attenco Solutions Logo"
                 width={260}
                 height={38}
