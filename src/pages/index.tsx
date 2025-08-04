@@ -16,9 +16,10 @@ export default function Home() {
       <Head>
         <title>Attenco Solutions</title>
         <meta name="description" content="Attenco Solutions" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex min-h-screen flex-col bg-white">
+      <main className="flex min-h-screen w-full flex-col bg-white text-[#122241]">
         <Navigation />
         <Hero />
         <AboutUs />
@@ -27,7 +28,7 @@ export default function Home() {
         <Insights />
         <ProcessOverview />
         <ImageLine2 />
-        <Services />
+        {/* <Services /> */}
         <Footer />
       </main>
     </>

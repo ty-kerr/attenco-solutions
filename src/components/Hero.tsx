@@ -15,22 +15,15 @@ export const Hero = () => {
             priority
             className="object-cover"
           />
-        </div>
-        <div className="absolute top-1/2 left-1/2 z-10 flex w-full max-w-4xl -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center text-center text-white">
-          <h1 className="text-[64px] leading-[76px] font-semibold">
-            Unlock Top Talents. <br /> Accelerate Your Growth.
-          </h1>
-          <div className="flex flex-row items-center justify-center space-x-1 pt-2">
-            <p className="text-[28px]">Start your hiring journey with </p>
-            <div>
-              <Image
-                src="/Logo.webp"
-                alt="Attenco Solutions Logo"
-                width={260}
-                height={38}
-                className="cursor-pointer"
-                priority
-              />
+
+          <div className="absolute top-1/2 left-1/2 z-10 flex w-full max-w-4xl -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center px-4 text-center text-white">
+            <h1 className="text-2xl leading-[30px] font-semibold md:text-[48px] md:leading-[54px] lg:text-[64px] lg:leading-[76px]">
+              Unlock Top Talents <br /> Accelerate Your Growth
+            </h1>
+            <div className="flex flex-row items-center justify-center space-x-1 pt-2">
+              <p className="text-[16px] md:text-[22px] lg:text-[28px]">
+                Start your hiring journey with us today
+              </p>
             </div>
           </div>
         </div>

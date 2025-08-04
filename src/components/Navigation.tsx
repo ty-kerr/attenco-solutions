@@ -18,7 +18,7 @@ export const Navigation = () => {
           onClick={() => handleClick("home")}
         />
       </div>
-      <ul className="flex space-x-12 pr-20 text-xl">
+      <ul className="hidden justify-between text-[12px] md:flex md:space-x-10 md:pr-10 md:text-[16px] lg:space-x-20 lg:pr-20 lg:text-xl">
         <li>
           <a
             href="#home"

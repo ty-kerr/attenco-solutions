@@ -3,7 +3,7 @@ export const Services = () => {
     <>
       <div
         id="services"
-        className="flex flex-col items-center justify-center space-y-4 bg-white px-30 py-16 text-left"
+        className="flex flex-col items-center justify-center space-y-4 bg-white px-30 py-12 text-left"
       >
         <h2 className="text-[42px] leading-[48px] font-semibold">
           Our Services
@@ -45,7 +45,7 @@ export const Services = () => {
         </div>
       </div>
       <div className="flex w-full flex-col items-center justify-center space-y-2 bg-white px-12 text-center">
-        <p className="max-w-[70%] text-xl">
+        <p className="text-xl">
           We cover a wide variety of roles—technical, non-technical, and
           everything in between. <br /> Here&apos;s a snapshot of the positions
           we recruit for.
@@ -86,7 +86,7 @@ export const Services = () => {
         </div>
       </div>
       <div className="flex w-full flex-col items-center justify-center space-y-2 bg-white px-12 py-14 text-center">
-        <p className="max-w-[70%] text-[36px] leading-[42px] font-semibold">
+        <p className="text-[30px] leading-[38px] font-semibold">
           The best talents are just one conversation away <br /> We&apos;d love
           to hear from you
         </p>

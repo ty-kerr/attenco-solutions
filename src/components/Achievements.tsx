@@ -1,12 +1,26 @@
+import useWindowSize from "@/hooks/useWindowSize";
 import Image from "next/image";
 
 export const Achievements = () => {
+  const { width } = useWindowSize();
+
+  const headerTextStyles =
+    width > 1440
+      ? "text-[32px] leading-[36px]"
+      : width > 1024
+        ? "text-[32px] leading-[36px]"
+        : width > 768
+          ? "text-[28px] leading-[32px]"
+          : "text-[18px] leading-[24px]";
+
   return (
-    <div className="flex h-[360px] w-full items-center justify-between px-30">
-      <h2 className="text-center text-3xl font-semibold">
+    <div className="flex w-full flex-col items-center justify-between px-4 pt-12 lg:h-[360px] lg:flex-row lg:space-x-4 lg:px-12 lg:pt-0">
+      <h2
+        className={`pb-4 text-center font-semibold lg:pb-0 ${headerTextStyles}`}
+      >
         Delivering Impact Through Experience
       </h2>
-      <div className="grid grid-cols-2 grid-rows-2 gap-x-12 gap-y-8">
+      <div className="space-y-3 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-12 sm:gap-y-8">
         <Stat
           imageSrc="/achievement.svg"
           imageAlt="Achievement Icon"
@@ -47,13 +61,38 @@ const Stat = ({
   stat: string;
   description: string;
 }) => {
+  const { width } = useWindowSize();
+
+  const iconSize =
+    width > 1440 ? 60 : width > 1024 ? 52 : width > 768 ? 52 : 40;
+
+  const statTextStyles =
+    width > 1440
+      ? "text-[36px]"
+      : width > 1024
+        ? "text-[32px]"
+        : width > 768
+          ? "text-[32px]"
+          : "text-[18px]";
+
+  const descriptionTextStyles =
+    width > 1440
+      ? "text-[20px]"
+      : width > 1024
+        ? "text-[18px]"
+        : width > 768
+          ? "text-[16px]"
+          : "text-[14px]";
+
   return (
-    <div className="flex flex-row items-center space-x-4">
-      <Image src={imageSrc} alt={imageAlt} width={60} height={60} />
+    <section className="flex flex-row items-center space-x-4">
+      <Image src={imageSrc} alt={imageAlt} width={iconSize} height={iconSize} />
       <div className="flex flex-col space-y-2">
-        <p className="text-4xl font-semibold">{stat}</p>
-        <p className="text-xl text-gray-600">{description}</p>
+        <p className={`font-semibold ${statTextStyles}`}>{stat}</p>
+        <p className={`text-xl text-gray-600 ${descriptionTextStyles}`}>
+          {description}
+        </p>
       </div>
-    </div>
+    </section>
   );
 };
