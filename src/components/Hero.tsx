@@ -7,13 +7,15 @@ export const Hero = () => {
   return (
     <div className={montserrat.className}>
       <div className="w-full" id="home">
-        <Image
-          src={"/hero_1.webp"}
-          alt={"Hero Image 1"}
-          priority
-          width={1920}
-          height={1080}
-        />
+        <div className="relative aspect-[16/9] w-full">
+          <Image
+            src="/hero_1.webp"
+            alt="Hero Image 1"
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
         <div className="absolute top-1/2 left-1/2 z-10 flex w-full max-w-4xl -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center text-center text-white">
           <h1 className="text-[64px] leading-[76px] font-semibold">
             Unlock Top Talents. <br /> Accelerate Your Growth.
