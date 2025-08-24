@@ -10,9 +10,9 @@ export const Insights = () => {
         ? "text-[32px] leading-[36px]"
         : width > 768
           ? "text-[28px] leading-[32px]"
-          : "text-[22px] leading-[34px]";
+          : "text-[28px] leading-[32px]";
   const paragraphTextStyles =
-    width > 1440 ? "text-xl" : width > 1024 ? "text-[16px]" : "text-[14px]";
+    width > 1440 ? "text-xl" : width > 1024 ? "text-[20px]" : "text-[20px]";
 
   return (
     <section

@@ -11,7 +11,7 @@ export const Achievements = () => {
         ? "text-[32px] leading-[36px]"
         : width > 768
           ? "text-[28px] leading-[32px]"
-          : "text-[18px] leading-[24px]";
+          : "text-[24px] leading-[28px]";
 
   return (
     <div className="flex w-full flex-col items-center justify-between px-4 pt-12 lg:h-[360px] lg:flex-row lg:space-x-4 lg:px-12 lg:pt-0">
@@ -73,7 +73,7 @@ const Stat = ({
         ? "text-[32px]"
         : width > 768
           ? "text-[32px]"
-          : "text-[18px]";
+          : "text-[28px]";
 
   const descriptionTextStyles =
     width > 1440
@@ -81,11 +81,11 @@ const Stat = ({
       : width > 1024
         ? "text-[18px]"
         : width > 768
-          ? "text-[16px]"
-          : "text-[14px]";
+          ? "text-[20px]"
+          : "text-[20px]";
 
   return (
-    <section className="flex flex-row items-center space-x-4">
+    <section className="flex flex-row items-center space-x-4 pb-8 lg:pb-0">
       <Image src={imageSrc} alt={imageAlt} width={iconSize} height={iconSize} />
       <div className="flex flex-col space-y-2">
         <p className={`font-semibold ${statTextStyles}`}>{stat}</p>

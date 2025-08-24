@@ -4,15 +4,15 @@ export const AboutUs = () => {
   const { width } = useWindowSize();
 
   const paragraphTextStyles =
-    width > 1440 ? "text-xl" : width > 1024 ? "text-[16px]" : "text-[14px]";
+    width > 1440 ? "text-xl" : width > 1024 ? "text-[20px]" : "text-[20px]";
   const subheaderTextStyles =
     width > 1440
       ? "text-[24px] leading-[32px]"
       : width > 1024
         ? "text-[18px] leading-[24px]"
         : width > 768
-          ? "text-[16px] leading-[20px]"
-          : "text-[14px] leading-[18px]";
+          ? "text-[20px] leading-[24px]"
+          : "text-[20px] leading-[24px]";
   const headerTextStyles =
     width > 1440
       ? "text-[42px] leading-[48px]"
@@ -20,7 +20,7 @@ export const AboutUs = () => {
         ? "text-[32px] leading-[36px]"
         : width > 768
           ? "text-[28px] leading-[32px]"
-          : "text-[22px] leading-[34px]";
+          : "text-[28px] leading-[32px]";
 
   return (
     <section

@@ -11,10 +11,10 @@ export const ProcessOverview = () => {
         ? "text-[32px] leading-[36px]"
         : width > 768
           ? "text-[28px] leading-[32px]"
-          : "text-[18px] leading-[24px]";
+          : "text-[24px] leading-[24px]";
 
   const paragraphTextStyles =
-    width > 1440 ? "text-xl" : width > 1024 ? "text-[16px]" : "text-[14px]";
+    width > 1440 ? "text-xl" : width > 1024 ? "text-[20px]" : "text-[20px]";
 
   const showGrid = width > 1024;
   const showDoubleColumn = width > 768;
