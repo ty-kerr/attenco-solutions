@@ -14,7 +14,7 @@ export const Services = () => {
           Our Services
         </h2>
         <div className="flex w-full items-center space-x-5">
-          <div className="flex flex-1 flex-col pt-12">
+          <div className="flex flex-1 flex-col pt-6 md:pt-12">
             <span className="text-2xl font-semibold">Outsourcing</span>
             <p className="mt-1 text-xl">
               We provide skilled professionals who become an extension of your
@@ -40,7 +40,7 @@ export const Services = () => {
               className="w-1/2 object-cover"
             />
           )}
-          <div className="flex flex-1 flex-col pt-12">
+          <div className="flex flex-1 flex-col pt-6 md:pt-12">
             <span className="text-2xl font-semibold">
               Headhunt & Recruitment
             </span>
