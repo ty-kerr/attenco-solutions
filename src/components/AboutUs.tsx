@@ -29,7 +29,8 @@ export const AboutUs = () => {
     >
       <div className="flex flex-col items-center justify-center text-center lg:h-full lg:w-1/2 lg:bg-gradient-to-b lg:from-[#F0F4FF] lg:to-white">
         <h2 className={`font-semibold ${headerTextStyles}`}>Our Company</h2>
-        <p className={`lg:pt-2 ${subheaderTextStyles} font-semibold`}>
+
+        <p className={`lg:pt-2 ${subheaderTextStyles} px-2 font-semibold`}>
           Your Partner in IT Outsourcing & Talent Management
         </p>
       </div>
