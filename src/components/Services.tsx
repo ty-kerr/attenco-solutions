@@ -8,7 +8,7 @@ export const Services = () => {
     <>
       <div
         id="services"
-        className="flex flex-col items-center justify-center space-y-4 bg-white px-8 py-12 text-center md:px-30 md:text-left"
+        className="flex flex-col items-center justify-center space-y-4 bg-white px-8 py-16 text-center md:px-30 md:text-left"
       >
         <h2 className="text-[42px] leading-[48px] font-semibold">
           Our Services
