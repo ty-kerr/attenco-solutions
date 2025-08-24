@@ -1,9 +1,14 @@
+import useWindowSize from "@/hooks/useWindowSize";
+
 export const Services = () => {
+  const { width } = useWindowSize();
+
+  const showImages = width > 1024;
   return (
     <>
       <div
         id="services"
-        className="flex flex-col items-center justify-center space-y-4 bg-white px-30 py-12 text-left"
+        className="flex flex-col items-center justify-center space-y-4 bg-white px-8 py-12 text-center md:px-30 md:text-left"
       >
         <h2 className="text-[42px] leading-[48px] font-semibold">
           Our Services
@@ -18,19 +23,23 @@ export const Services = () => {
               support
             </p>
           </div>
-          <img
-            src={"/services_1.webp"}
-            alt={"Services Image"}
-            className="w-1/2 object-cover"
-          />
+          {showImages && (
+            <img
+              src={"/services_1.webp"}
+              alt={"Services Image"}
+              className="w-1/2 object-cover"
+            />
+          )}
         </div>
 
         <div className="flex w-full items-center space-x-5">
-          <img
-            src={"/services_2.webp"}
-            alt={"Services Image"}
-            className="w-1/2 object-cover"
-          />
+          {showImages && (
+            <img
+              src={"/services_2.webp"}
+              alt={"Services Image"}
+              className="w-1/2 object-cover"
+            />
+          )}
           <div className="flex flex-1 flex-col pt-12">
             <span className="text-2xl font-semibold">
               Headhunt & Recruitment
@@ -50,8 +59,8 @@ export const Services = () => {
           everything in between. <br /> Here&apos;s a snapshot of the positions
           we recruit for.
         </p>
-        <div className="mt-8 flex flex-row space-x-24">
-          <div className="w-[500px] rounded-l bg-[#EAEDF6] text-left">
+        <div className="mt-8 flex flex-col lg:flex-row lg:space-x-24">
+          <div className="mb-12 w-[320px] rounded-l bg-[#EAEDF6] text-left md:w-[500px] lg:mb-0">
             <div className="rounded-l bg-[#2B4CA9] px-10 py-5 text-white">
               <span className="text-2xl font-semibold">TECHNICAL</span>
             </div>
@@ -67,7 +76,7 @@ export const Services = () => {
               </ul>
             </div>
           </div>
-          <div className="w-[500px] rounded-l bg-[#EAEDF6] text-left">
+          <div className="w-[320px] rounded-l bg-[#EAEDF6] text-left md:w-[500px]">
             <div className="rounded-l bg-[#2B4CA9] px-10 py-5 text-white">
               <span className="text-2xl font-semibold">NON-TECHNICAL</span>
             </div>

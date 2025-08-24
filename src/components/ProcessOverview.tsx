@@ -31,7 +31,7 @@ export const ProcessOverview = () => {
         </p>
       </section>
       {showGrid && (
-        <section className="mt-5 w-full space-y-6 px-8">
+        <section className="mt-5 w-full space-y-6 px-8 pb-12">
           <div className="grid w-full grid-cols-3 space-x-6 bg-white">
             <div className="col-span-1">
               <ProcessCard number="01" title="Requirement Gathering" />
