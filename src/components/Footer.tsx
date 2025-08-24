@@ -26,12 +26,12 @@ export const Footer = () => {
           Contact Information
         </h4>
         <div className="flex items-center space-x-2">
-          <img src="/call.svg" alt="phone number" height={30} width={30} />
+          <img src="/sms.svg" alt="email" height={30} width={30} />
           <p className="text-white md:text-lg">attencosolutions@gmail.com</p>
         </div>
         <div className="flex items-center space-x-2">
-          <img src="/sms.svg" alt="phone number" height={30} width={30} />
-          <p className="text-white md:text-lg">+66645204065</p>
+          <img src="/call.svg" alt="phone number" height={30} width={30} />
+          <p className="text-white md:text-lg">094-351-6001</p>
         </div>
         <div className="flex items-start space-x-2">
           <img src="/location.svg" alt="phone number" height={30} width={30} />
